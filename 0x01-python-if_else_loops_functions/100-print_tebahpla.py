@@ -3,6 +3,6 @@
 for letter in range(ord('z'), (ord('a') - 1), -1):
     if (letter % 2 == 1):
         letter = letter - (ord('a') - ord('A'))
-    print(chr(letter), end='')
+    print("{}".format(chr(letter)), end='')
     if (letter % 2 == 1):
         letter = letter + (ord('a') - ord('A'))
