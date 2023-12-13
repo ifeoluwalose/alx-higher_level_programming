@@ -8,4 +8,4 @@ def uppercase(str):
     for c in mod:
         if (ord(c) > (ord('a')-1)) and (ord(c) < (ord('z') + 1)):
             c = chr(ord(c) - (ord("a") - ord("A")))
-        print(c, end="")
+        print("{}".format(c), end="")
