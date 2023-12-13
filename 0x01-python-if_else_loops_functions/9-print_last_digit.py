@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# def print_last_digit - prints the last digit of a number.
+# print_last_digit - prints the last digit of a number.
 # number: decimal input.
 # Return - Last digit of number
 def print_last_digit(number):
