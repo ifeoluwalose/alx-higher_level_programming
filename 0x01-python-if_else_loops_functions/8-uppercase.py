@@ -4,8 +4,8 @@
 # str: string input.
 # Return - Nothing.
 def uppercase(str):
-    str = str + "\n"
-    for c in str:
+    mod = str + "\n"
+    for c in mod:
         if (ord(c) > (ord('a')-1)) and (ord(c) < (ord('z') + 1)):
             c = chr(ord(c) - (ord("a") - ord("A")))
         print(c, end="")
