@@ -13,6 +13,6 @@ def replace_in_list(my_list, idx, element):
         the element at the index(idx), otherwise None.
     """
     if (idx >= (len(my_list)) or idx < 0):
-        return None
+        return my_list
     my_list[idx] = element
     return my_list
