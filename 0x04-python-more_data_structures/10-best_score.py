@@ -11,10 +11,10 @@ def best_score(a_dictionary):
     """
     ret_key = None
     ret_key_val = 0
-    if (a_dictionary == None) or (len(a_dictionary) == 0):
+    if (a_dictionary is None) or (len(a_dictionary) == 0):
         return ret_key
     for key in a_dictionary:
-        if ret_key == None:
+        if ret_key is None:
             ret_key_val = a_dictionary[key]
             ret_key = key
         elif ret_key_val < a_dictionary[key]:

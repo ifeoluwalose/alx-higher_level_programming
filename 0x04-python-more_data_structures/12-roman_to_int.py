@@ -10,7 +10,7 @@ def roman_to_int(roman_string):
         converted integer
     """
     ret = 0
-    if not isinstance(roman_string, str) or roman_string == None:
+    if not isinstance(roman_string, str) or roman_string is None:
         return ret
     I, V, X, L, C, D, M = 1, 5, 10, 50, 100, 500, 1000
     indicator = False
@@ -21,9 +21,9 @@ def roman_to_int(roman_string):
         if roman_string[i] == 'I':
             if (i + 1) < len(roman_string):
                 if (roman_string[i + 1] == 'V'):
-                     ret += 4
-                     indicator = True
-                     continue
+                    ret += 4
+                    indicator = True
+                    continue
                 elif (roman_string[i + 1]) == 'X':
                     ret += 9
                     indicator = True
@@ -35,9 +35,9 @@ def roman_to_int(roman_string):
         elif roman_string[i] == 'X':
             if (i + 1) < len(roman_string):
                 if (roman_string[i + 1] == 'L'):
-                     ret += 40
-                     indicator = True
-                     continue
+                    ret += 40
+                    indicator = True
+                    continue
                 elif (roman_string[i + 1]) == 'C':
                     ret += 90
                     indicator = True
@@ -50,9 +50,9 @@ def roman_to_int(roman_string):
         elif roman_string[i] == 'C':
             if (i + 1) < len(roman_string):
                 if (roman_string[i + 1] == 'D'):
-                     ret += 400
-                     indicator = True
-                     continue
+                    ret += 400
+                    indicator = True
+                    continue
                 elif (roman_string[i + 1]) == 'M':
                     ret += 900
                     indicator = True

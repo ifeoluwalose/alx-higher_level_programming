@@ -17,4 +17,3 @@ def search_replace(my_list, search, replace):
         if ret_list[i] == search:
             ret_list[i] = replace
     return (ret_list)
- 
