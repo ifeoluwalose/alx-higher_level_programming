@@ -12,10 +12,18 @@ def list_division(my_list_1, my_list_2, list_length):
         a new list (length = list_length) with all divisions
     """
     output_list = []
-    try:
-        quotient = a / b
-    except ZeroDivisionError:
-        quotient = None
-    finally:
-        print("Inside result: {}".format(quotient))
-    return quotient
+    for i in range(list_length):
+        try:
+           quotient = my_list_1[i] / my_list_2[i]
+        except TypeError:
+            quotient = 0
+            print("wrong type")
+        except IndexError:
+            quotient = 0
+            print("out of range")
+        except ZeroDivisionError:
+            print("division by 0")
+            quotient = 0
+        finally:
+            output_list.append(quotient)
+    return output_list
