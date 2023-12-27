@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+# Author: Michael Ifeoluwalose Adesina
 def safe_print_list_integers(my_list=[], x=0):
     """safe_print_list_integers: prints the first x elements
                                  of a list and only integers.
